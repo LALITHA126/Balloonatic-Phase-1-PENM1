@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact Form</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+      <a id="logo" href="homepage (1).html">
+      <img src="balloon.png.jfif" alt="Logo"> 
+      <title>The Balloonatic Asylum</title>
+      </a>  
+
+   
+       <nav class="view">
+           <ul>
+              <li><a href="productpage.html">Products</a></li>
+              <li><a href="aboutpage.html">About</a></li>
+              <li><a href="contactsample.html">Contact Us</a></li>
+           </ul>
+       </nav> 
+
+   </header>
+    
+   
+       <nav class="mainnav">
+           <ul>
+               <li><a href="productpage.html">Birthday Bouquets</a></li>
+               <li><a href="productpage.html">Balloony Occasions</a></li>
+               <li><a href="productpage.html">Build a Balloon Bouquet</a></li>
+               <li><a href="productpage.html">Decorating with Balloons</a></li>
+               <li><a href="productpage.html">Balloons in Bulk</a></li>
+           </ul>
+       </nav>
+ 
+
+    <!--alert messages start
+    <div class="alert-success">
+      <span>Message Sent! Thank you for contacting us.</span>
+    </div>
+    <div class="alert-error">
+      <span>Something went wrong! Please try again.</span>
+    </div>
+    alert messages end-->
+
+    <!--contact section start-->
+        <div class="contact-section">
+          <div class="info">
+            <div><i class="fas fa-map-marker-alt"></i>149 Elm St, New Haven, CT 06511</div>
+            <div><i class="fas fa-envelope"></i>customer-support@tba.com.</div>
+            <div><i class="fas fa-phone"></i>++1-203-432-2300</div>
+            <div><i class="fas fa-clock"></i>Mon - Fri 8:00 AM to 5:00 PM</div>
+          </div>
+          <div class="form">
+            <h2>Contact Us</h2>
+            <p>please contact us anytime</p>
+            <form class="contact" action="" method="post">
+              <input type="text" name="name" class="text-box" placeholder="Your Name" required >
+              <input type="email" name="email" class="text-box" placeholder="Your Email" required >
+              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+              <input type="submit" name="submit" class="btn" onclick="lalitha_redirect()" value="Send" required>
+            </form>
+         </div>
+       </div>
+    <!--contact section end-->
+    <footer>
+      <small><img src="balloon.png.jfif">&#169 2021 Created by Ballonatic Asylum. All rights reserved</small>
+  </footer>
+
+
+        
+  </body>
+  <script>
+      function lalitha_redirect()
+      {
+        window.location.replace("http://127.0.0.1:5500/homepage (1).html")
+      }
+  </script>
+</html>

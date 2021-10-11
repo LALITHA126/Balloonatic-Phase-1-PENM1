@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* styling our overall page */
+body     {
+  background: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  
+
+}
+
+/* styling our header */
+header   {
+  background: pink;
+  color: rgb(241, 236, 236);
+  padding: 20px 30px;
+  border-bottom: solid rgb(73, 19, 19);
+  border-top: solid rgb(82, 20, 20);
+}
+
+/* logo */
+#logo         {
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  width: 49%;
+}
+#logo img    {
+  width: 50px;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+#logo title {
+  display: inline-block;
+}
+
+/* main navigation */
+.view {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+}
+.view ul{
+  list-style: none;
+  margin: 0;
+  
+}
+
+.view ul li {
+  display: inline-block;
+}
+
+.view ul li a {
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-bottom: 2px solid red;
+  transition: 0.8s ease all;
+}
+.view ul li a:hover   {
+  background: rgb(212, 101, 198);
+}
+
+.mainnav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  text-transform: capitalize;
+  justify-content: space-evenly;
+  padding: 0;
+  border: 5px;
+  
+ 
+  
+}
+.mainnav ul li {
+  display: inline-block;
+}
+
+
+
+
+
+.mainnav ul li a  {
+  background: white;
+  color: rgb(233, 216, 216);;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5.px;
+  transition: 0.3s ease all;
+
+ 
+}
+
+.mainnav ul li a:hover {
+   background: rgb(179, 127, 127);
+  
+}
+
+
+
+
+
+.contact-section{
+
+  background: url(contact1.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.info{
+  color: #fff;
+  max-width: 500px;
+  line-height: 65px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.info i{
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.form{
+  max-width: 700px;
+  margin-right: 50px;
+}
+
+.info, .form{
+  flex: 1;
+}
+
+.form h2{
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.form p{
+  color:#FFF;
+  text-align: center;
+  font-size: 25px;
+  text-transform: lowercase;
+  margin-bottom: capitalize;
+}
+
+.form .text-box{
+  background: #000;
+  color: #fff;
+  border: none;
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.form .text-box:first-child{
+  margin-right: 15px;
+}
+
+.form textarea{
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.form .btn{
+  float: right;
+  background: #2E94E3;
+  color: #fff;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: backgroud;
+}
+
+.form .btn:hover{
+  background: #0582E3;
+}
+
+@media screen and (max-width: 950px){
+  .contact-section{
+    flex-direction: column;
+  }
+
+  .info, .form{
+    margin: 30px 50px;
+  }
+
+  .form h2{
+    font-size: 30px;
+  }
+
+  .form .text-box{
+    width: 100%;
+  }
+}
+
+/*css for alert messages*/
+
+.alert-success{
+  z-index: 1;
+  background: #D4EDDA;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #3AD66E;
+  border-radius: 4px;
+}
+
+.alert-error{
+  z-index: 1;
+  background: #FFF3CD;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #FFA502;
+  border-radius: 4px;
+}
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  height: 20vh;
+}
+footer img {
+width: 50px;
+border-radius: 3px;
+margin-right: 8px;
+}
+
+
+      

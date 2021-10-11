@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <script>
+            window.onload = function(){
+
+            
+            var images = []
+            images[0] =`<div class="card">
+                        <img src="star1.jpg" alt="ballon 1" style="width:100%">
+                        <div class="container">
+                          <h4><b>Zesliwy Pastel Colorful Latex Party Balloon</b></h4>
+                          <p>These assorted macaron color latex balloons has 10 different colors: Light blue, blue, Yellow, Pink, Lilac, purple, mint green, Peach, Red, Orange. you can use all 120 colorful 12 inch balloons to create a rainbow balloon theme.</p>
+                            <p class="price">Price: 67$</p>
+                        </div>
+                        <button class="button" onclick="lalitha_redirect()">Select</button> 
+                    </div>`
+            images[1] = `<div class="card">
+                        <img src="star2.jpg" alt="ballon 2" style="width:100%">
+                        <div class="container">
+                          <h4><b>:HELLO PARTY Birthday Party Decoration Party,desc:Happy Birthday Foil </b></h4>
+                          <p>Happy Birthday Foil Fringe Curtains 1m×2m, Happy Birthday Balloons×1, Five-pointed Star Balloons×1, 31 colorful balloons (pink, blue, yellow, green, purple), gold ribbon×10m, and related tools, You will get the most colorful part.</p>
+                            <p class="price">Price: 67$</p>
+                            <p><button onclick="lalitha_redirect()" >Select</button></p>
+                        </div>
+                    </div>`
+
+             images[2] = `<div class="card">
+                        <img src="star3.jpg" alt="ballon 3" style="width:100%">
+                        <div class="container">
+                          <h4><b>Ballon Cloud</b></h4>
+                          <p>beautiful kit,this pack include 80pcs thicken shiny latex balloon,it’s suitable for birthday party,wedding,bridal,baby shower</p>
+                            <p class="price">Price: 90$</p>
+                            <p><button onclick="lalitha_redirect()">Select</button></p>
+                        </div>
+                    </div>`
+
+            images[3]= `<div class="card">
+                        <img src="star4.jpg" alt="ballon 4" style="width: 100%">
+                        <div class="container">
+                            <h5><b>3' Latex Ballons</b></h5>
+                            <p>Latex ballons with 3' Ribbons + Weight and 3' Fantasy with 
+                               2 Clusters of 4 at Neck.</p>
+                            <p class="price">Price: 37$</p>
+                            <p><button onclick="lalitha_redirect()" >Select</button></p>
+
+                        </div>
+                    </div>`
+
+            images[4] = `<div class="card">
+                        <img src="star5.jpg" alt="ballon 5" style="width: 100%">
+                        <div class="container">
+                            <h5><b>Hot Air Ballon</b></h5>
+                            <p>Here is the Hot Air Ballon with basket included.</p>
+                            <p class="price">Price: 98$</p>
+                            <p><button onclick="lalitha_redirect()">Select</button></p>
+                        </div>    
+                    </div>`
+
+            var temp = new Set();
+            while(temp.size<3)
+            {
+                temp.add(Math.floor(Math.random()*images.length));
+            }
+            indexArray = Array.from(temp)
+
+            function myFunction() {
+                for(let i=0;i<indexArray.length;i++){
+                    document.getElementById("lalitha").innerHTML += images[i];
+                }
+            }
+
+            myFunction();
+        }
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width intitial-scale=1">
+        <title>The Balloonatic Asylum</title>
+        <link rel="stylesheet" href="styleproductpage.css">
+    </head>
+
+    <body>
+        <header>
+           <a id="logo" href="homepage (1).html">
+           <img src="balloon.png.jfif" alt="Logo"> 
+           <title>The Balloonatic Asylum</title>
+           </a>  
+
+        
+            <nav class="view">
+                <ul>
+                   <li><a href="productpage.html">Products</a></li>
+                   <li><a href="aboutpage.html">About</a></li>
+                   <li><a href="contactsample.html">Contact Us</a></li>
+                </ul>
+            </nav>
+     
+        </header>
+         
+        <main>
+            <nav class="mainnav">
+                <ul>
+                    <li><a href="productpage.html">Birthday Bouquets</a></li>
+                    <li><a href="productpage.html">Balloony Occasions</a></li>
+                    <li><a href="productpage.html">Build a Balloon Bouquet</a></li>
+                    <li><a href="productpage.html">Decorating with Balloons</a></li>
+                    <li><a href="productpage.html">Balloons in Bulk</a></li>
+                </ul>
+            </nav>
+        </script>
+
+            <section class="product">
+                <h1 class="heading">Product Offers</h1>
+                <p class="product-intro">The main features of the business are a large selection of balloons and balloon-themed
+                   products for all occasions, local delivery within 75 miles of the main store, two-day shipping
+                   anywhere in the USA, free shipping on orders over $100, and a "Balloon-of-the-Month" club that 
+                   sends an assortment of mystery balloons in a box once per month for $39.95.</p>
+            </section>
+
+            <section>
+                <div class="grid-container" id="lalitha">
+
+                    
+
+                </div>
+            </section>
+                
+
+
+               
+        </main>
+
+        <footer>
+            <small><img src="balloon.png.jfif">&#169 2021 Created by Ballonatic Asylum. All rights reserved</small>
+        </footer>
+    </body>
+    <script>
+         function lalitha_redirect()
+        {
+        window.location.replace("http://127.0.0.1:5500/homepage (1).html")
+        }
+    </script>
+</html>
